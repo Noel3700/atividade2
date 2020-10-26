@@ -11,7 +11,9 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    @yield('conteudo')
+                    <img class="img-fluid"src="{{asset('imagens/entrada1.jpg')}}">    
+                    
+                   
 
 
                 </div>
@@ -28,18 +30,22 @@
                     <a href="{{route('noticias.index')}}"><i style="color:black" class="far fa-newspaper"></i>Notícias</a>
                         </div>
                         <div class="col-md-2">
-                    <a href="{{route('empresa.index')}}">Empresa</a>
+                    <a href="{{route('empresa.index')}}"><i style="color:black" class="fas fa-industry"></i>Empresa</a>
                         </div>
                         <div class="col-md-2">
-                    <a href="{{route('ondestamos.index')}}">Localização</a>
+                    <a href="{{route('ondestamos.index')}}"><i style="color:black" class="fas fa-map-marked-alt"></i>Localização</a>
                         </div>
                         <div class="col-md-2">
-                    <a href="{{route('contactos.index')}}">Contactos</a>
+                    <a href="{{route('contactos.index')}}"><i style="color:black" class="fas fa-phone-alt"></i>Contactos</a>
                         </div>
+                <a href="{{route('formulario.index')}}"><i style="color:black" class="fas fa-user-circle"></i>Formulário</a>
+                        
                     </div>
               
               
         </div>
+            @yield('conteudo')
+            
 
         
         <script src="{{asset('js/jquery.min.js')}}"></script>

@@ -14,7 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/','App\http\Controllers\PortalController@index')->name('entrada.index');
+
 Route::get('/noticias','App\http\Controllers\PortalController@noticias')->name('noticias.index');
+
 Route::get('/empresa','App\http\Controllers\PortalController@empresa')->name('empresa.index');
+
 Route::get('/onde-estamos','App\http\Controllers\PortalController@ondestamos')->name('ondestamos.index');
+
 Route::get('/contactos','App\http\Controllers\PortalController@contactos')->name('contactos.index');
+
+Route::get('/formulario','App\http\Controllers\PortalController@formulario')->name('formulario.index');
